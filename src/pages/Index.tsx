@@ -1,47 +1,10 @@
-
-import React, { useEffect } from "react";
-import MenuSuperior from "@/components/MenuSuperior";
-import PublicPlansSection from "@/components/sections/PublicPlansSection";
-import Testimonials from "@/components/Testimonials";
-import HomeCarouselSection from "@/components/sections/HomeCarouselSection";
-import CleanHowItWorksSection from "@/components/sections/CleanHowItWorksSection";
-import RecentModulesCarousel from "@/components/sections/RecentModulesCarousel";
-import FuturisticFooter from "@/components/FuturisticFooter";
-import PageLayout from "@/components/layout/PageLayout";
-import SocialMediaButtons from "@/components/SocialMediaButtons";
-
 const Index = () => {
-  useEffect(() => {
-    if (window.AOS) {
-      window.AOS.init({
-        duration: 600,
-        once: true,
-        offset: 50,
-        delay: 0,
-      });
-    }
-  }, []);
-
   return (
-    <PageLayout
-      variant="auth"
-      backgroundOpacity="strong"
-      showGradients={false}
-      className="flex flex-col"
-    >
-      <MenuSuperior />
-
-      <main className="w-full overflow-x-hidden">
-        <HomeCarouselSection />
-        <PublicPlansSection />
-        <CleanHowItWorksSection />
-        <Testimonials />
-        <RecentModulesCarousel />
-      </main>
-
-      <FuturisticFooter />
-      <SocialMediaButtons />
-    </PageLayout>
+    <main className="ocean-stage relative flex min-h-screen items-center justify-center overflow-hidden bg-ocean animate-ocean-drift">
+      <h1 className="font-display text-hero text-[clamp(3rem,15vw,11rem)] font-bold uppercase tracking-[0.4em] drop-shadow-lg">
+        AZUL
+      </h1>
+    </main>
   );
 };
 
